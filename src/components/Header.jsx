@@ -1,13 +1,16 @@
 import { useEffect, useState, useRef } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { IoLogoGithub, IoMenu } from "react-icons/io5";
-import { motion } from "framer-motion";
+import { motion, useTime, useTransform } from "framer-motion";
 import logo from "../assets/transpa BB.png";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuRef = useRef(null);
+
+  const time = useTime();
+  const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,14 +56,7 @@ function Header() {
               src={logo}
               alt="babel"
               className="w-16"
-              animate={{
-                rotate: [0, 0, 360, 360, 0],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.5, 0.8, 1],
-              }}
+              style={{ rotate }}
             />
           </div>
           <nav className="flex items-center gap-3 transition duration-400">
@@ -74,7 +70,7 @@ function Header() {
               </li>
               <li className="inline-flex items-center gap-1">
                 <IoLogoGithub />
-                <a href="https://github.com/Jchael12/Babel">Source</a>
+                <a href="https://github.com/Jchael12/Babel-App">Source</a>
               </li>
               <li>
                 <a href="#">Contact</a>
