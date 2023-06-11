@@ -14,7 +14,7 @@ function About() {
     aTag.click();
     aTag.remove();
   };
-  const APK_FILE_URL = "https://jchael12.github.io/Babel-Final/Babel.apk";
+  const APK_FILE_URL = "https://jchael12.github.io/Babel-App/Babel.apk";
 
   return (
     <div className="w-full overflow-hidden">
