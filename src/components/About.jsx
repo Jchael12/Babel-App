@@ -1,6 +1,6 @@
 import image4 from "../assets/Saly-12.png";
-import image5 from "../assets/Saly-44.png";
-import image6 from "../assets/Saly-31.png";
+import image5 from "../assets/Saly-31.png";
+import image6 from "../assets/Saly-44.png";
 import { FaAndroid } from "react-icons/fa";
 import { motion } from "framer-motion";
 
