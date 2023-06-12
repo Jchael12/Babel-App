@@ -17,13 +17,65 @@ function About() {
   const APK_FILE_URL = "https://jchael12.github.io/Babel-App/Babel.apk";
 
   return (
-    <div className="w-full overflow-hidden">
-      <h1 className="font-bold text-white text-7xl text-center pt-10 pb-20 md:pb-0">
+    <motion.div whileInView={"visible"} className="w-full overflow-hidden">
+      <motion.h1
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        variants={{
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+              delay: 1.5,
+            },
+          },
+        }}
+        className="font-bold text-white text-7xl text-center py-24 md:pb-0"
+      >
         About
-      </h1>
-      <div className="flex md:justify-between items-center text-center mb-20  mx-12 md:mx-60">
-        <img src={image4} alt="" className="w-6/12" />
-        <div>
+      </motion.h1>
+      <motion.div
+        whileInView={"visible"}
+        className="flex md:justify-between items-center text-center my-24  mx-12 md:mx-60"
+      >
+        <motion.img
+          initial={{
+            opacity: 0,
+            x: 50,
+          }}
+          variants={{
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+                delay: 1,
+              },
+            },
+          }}
+          src={image4}
+          alt=""
+          className="w-6/12"
+        />
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          variants={{
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 1.5,
+              },
+            },
+          }}
+        >
           <h1 className="text-white font-bold text-6xl">Reliable</h1>
           <p className="text-white text-justify mt-10 md:px-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa
@@ -39,11 +91,47 @@ function About() {
             itaque similique voluptatem molestiae soluta tempore voluptatibus
             ratione dolorum? Ut quam necessitatibus modi asperiores.
           </p>
-        </div>
-      </div>
-      <div className="flex md:justify-between items-center text-center my-20 mx-12 md:mx-60">
-        <img src={image5} alt="" className="w-6/12" />
-        <div>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        whileInView={"visible"}
+        className="flex md:justify-between items-center text-center my-24 mx-12 md:mx-60"
+      >
+        <motion.img
+          initial={{
+            opacity: 0,
+            x: 50,
+          }}
+          variants={{
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+                delay: 1,
+              },
+            },
+          }}
+          src={image5}
+          alt=""
+          className="w-6/12"
+        />
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          variants={{
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 1.5,
+              },
+            },
+          }}
+        >
           <h1 className="text-white font-bold text-6xl ">Efficient</h1>
           <p className="text-white text-justify mt-10 md:px-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa
@@ -59,11 +147,47 @@ function About() {
             itaque similique voluptatem molestiae soluta tempore voluptatibus
             ratione dolorum? Ut quam necessitatibus modi asperiores.
           </p>
-        </div>
-      </div>
-      <div className="flex md:justify-between items-center text-center my-20 mx-12 md:mx-60">
-        <img src={image6} alt="" className="w-6/12" />
-        <div>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        whileInView={"visible"}
+        className="flex md:justify-between items-center text-center my-24 mx-12 md:mx-60"
+      >
+        <motion.img
+          initial={{
+            opacity: 0,
+            x: 50,
+          }}
+          variants={{
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+                delay: 1,
+              },
+            },
+          }}
+          src={image6}
+          alt=""
+          className="w-6/12"
+        />
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          variants={{
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 1.5,
+              },
+            },
+          }}
+        >
           <h1 className="text-white font-bold text-5xl ">User Friendly</h1>
           <p className="text-white text-justify mt-10 md:px-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa
@@ -79,8 +203,8 @@ function About() {
             itaque similique voluptatem molestiae soluta tempore voluptatibus
             ratione dolorum? Ut quam necessitatibus modi asperiores.
           </p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className="flex items-center justify-center py-10 ">
         <motion.button
           onClick={() => {
@@ -96,7 +220,7 @@ function About() {
           Download
         </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
