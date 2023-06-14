@@ -65,14 +65,14 @@ function Header() {
                 scrolled ? "text-white" : ""
               }`}
             >
-              <li>
+              <li className="hover:text-white">
                 <a href="#">Home</a>
               </li>
-              <li className="inline-flex items-center gap-1">
+              <li className="inline-flex hover:text-white ease-in items-center gap-1">
                 <IoLogoGithub />
                 <a href="https://github.com/Jchael12/Babel-App">Source</a>
               </li>
-              <li>
+              <li className="hover:text-white">
                 <a href="#">Contact</a>
               </li>
             </ul>

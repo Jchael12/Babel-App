@@ -39,7 +39,7 @@ function About() {
       </motion.h1>
       <motion.div
         whileInView={"visible"}
-        className="flex md:justify-between items-center text-center my-24  mx-12 md:mx-60"
+        className="flex flex-col md:flex-row md:justify-between items-center text-center my-24  mx-12 md:mx-60"
       >
         <motion.img
           initial={{
@@ -58,7 +58,7 @@ function About() {
           }}
           src={image4}
           alt=""
-          className="w-6/12"
+          className="md:w-6/12 "
         />
         <motion.div
           initial={{
@@ -77,25 +77,21 @@ function About() {
           }}
         >
           <h1 className="text-white font-bold text-6xl">Reliable</h1>
-          <p className="text-white text-justify mt-10 md:px-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa
-            id enim iure aperiam soluta! Quis voluptatibus beatae aliquam
-            adipisci eligendi ab, facere suscipit saepe porro nobis quasi
-            obcaecati dignissimos natus cupiditate velit ipsum modi, culpa
-            pariatur repudiandae consequatur quisquam distinctio expedita cum.
-            Sint cum repudiandae cupiditate corrupti perspiciatis dicta iure est
-            dolores consequatur voluptatem illum illo sunt, harum ducimus quia
-            aliquam nam similique deserunt ab hic! Delectus, repellendus fuga!
-            Adipisci a doloremque nihil ducimus explicabo, ipsam omnis
-            cupiditate, tenetur esse quisquam veniam beatae nisi, consectetur
-            itaque similique voluptatem molestiae soluta tempore voluptatibus
-            ratione dolorum? Ut quam necessitatibus modi asperiores.
+          <p className="text-white text-justify mt-5 md:mt-10 md:px-10">
+            Realtime language translation is an advanced technology that offers
+            a reliable solution for overcoming language barriers. With its
+            sophisticated algorithms and extensive language databases, it
+            ensures accurate and precise translations, enabling effective
+            communication between individuals who speak different languages.
+            This reliability stems from its ability to quickly analyze and
+            interpret spoken or written language, providing seamless and
+            consistent translations in real time.
           </p>
         </motion.div>
       </motion.div>
       <motion.div
         whileInView={"visible"}
-        className="flex md:justify-between items-center text-center my-24 mx-12 md:mx-60"
+        className="flex flex-col md:flex-row md:justify-between items-center text-center my-24 mx-12 md:mx-60"
       >
         <motion.img
           initial={{
@@ -114,7 +110,7 @@ function About() {
           }}
           src={image5}
           alt=""
-          className="w-6/12"
+          className="md:w-6/12"
         />
         <motion.div
           initial={{
@@ -133,35 +129,32 @@ function About() {
           }}
         >
           <h1 className="text-white font-bold text-6xl ">Efficient</h1>
-          <p className="text-white text-justify mt-10 md:px-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa
-            id enim iure aperiam soluta! Quis voluptatibus beatae aliquam
-            adipisci eligendi ab, facere suscipit saepe porro nobis quasi
-            obcaecati dignissimos natus cupiditate velit ipsum modi, culpa
-            pariatur repudiandae consequatur quisquam distinctio expedita cum.
-            Sint cum repudiandae cupiditate corrupti perspiciatis dicta iure est
-            dolores consequatur voluptatem illum illo sunt, harum ducimus quia
-            aliquam nam similique deserunt ab hic! Delectus, repellendus fuga!
-            Adipisci a doloremque nihil ducimus explicabo, ipsam omnis
-            cupiditate, tenetur esse quisquam veniam beatae nisi, consectetur
-            itaque similique voluptatem molestiae soluta tempore voluptatibus
-            ratione dolorum? Ut quam necessitatibus modi asperiores.
+          <p className="text-white text-justify mt-5 md:mt-10 md:px-10">
+            Furthermore, realtime language translation systems are highly
+            efficient, delivering swift and near-instantaneous translations.
+            They leverage powerful computing capabilities to process vast
+            amounts of linguistic data within milliseconds, allowing users to
+            engage in fluid conversations without experiencing significant
+            delays. This efficiency is particularly beneficial in time-sensitive
+            scenarios, such as international business meetings, travel
+            encounters, or global collaborations, where rapid and accurate
+            communication is paramount.
           </p>
         </motion.div>
       </motion.div>
       <motion.div
         whileInView={"visible"}
-        className="flex md:justify-between items-center text-center my-24 mx-12 md:mx-60"
+        className="flex flex-col md:flex-row md:justify-between items-center text-center my-24 mx-12 md:mx-60"
       >
         <motion.img
           initial={{
             opacity: 0,
-            x: 50,
+            y: 50,
           }}
           variants={{
             visible: {
               opacity: 1,
-              x: 0,
+              y: 0,
               transition: {
                 duration: 1,
                 delay: 1,
@@ -170,7 +163,7 @@ function About() {
           }}
           src={image6}
           alt=""
-          className="w-6/12"
+          className="md:w-6/12"
         />
         <motion.div
           initial={{
@@ -189,19 +182,16 @@ function About() {
           }}
         >
           <h1 className="text-white font-bold text-5xl ">User Friendly</h1>
-          <p className="text-white text-justify mt-10 md:px-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa
-            id enim iure aperiam soluta! Quis voluptatibus beatae aliquam
-            adipisci eligendi ab, facere suscipit saepe porro nobis quasi
-            obcaecati dignissimos natus cupiditate velit ipsum modi, culpa
-            pariatur repudiandae consequatur quisquam distinctio expedita cum.
-            Sint cum repudiandae cupiditate corrupti perspiciatis dicta iure est
-            dolores consequatur voluptatem illum illo sunt, harum ducimus quia
-            aliquam nam similique deserunt ab hic! Delectus, repellendus fuga!
-            Adipisci a doloremque nihil ducimus explicabo, ipsam omnis
-            cupiditate, tenetur esse quisquam veniam beatae nisi, consectetur
-            itaque similique voluptatem molestiae soluta tempore voluptatibus
-            ratione dolorum? Ut quam necessitatibus modi asperiores.
+          <p className="text-white text-justify mt-5 md:mt-10 md:px-10">
+            Moreover, these systems prioritize user-friendliness, aiming to
+            provide a seamless and intuitive experience for both novice and
+            experienced users. User-friendly interfaces, whether in the form of
+            mobile applications, web platforms, or integrated devices, offer
+            simplified controls and clear visual feedback, making it easy for
+            individuals to access and utilize the translation services. By
+            minimizing complexity and maximizing accessibility, realtime
+            language translation fosters inclusivity and facilitates effective
+            communication across diverse linguistic backgrounds.
           </p>
         </motion.div>
       </motion.div>

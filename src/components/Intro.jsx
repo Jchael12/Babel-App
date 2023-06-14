@@ -35,7 +35,7 @@ function Intro() {
           }}
           transition={{
             ease: [0, 0.71, 0.2, 1.01],
-            duration: 0.8,
+            duration: 0.5,
             delay: 2,
           }}
         />
@@ -43,14 +43,14 @@ function Intro() {
           src={image2}
           alt=""
           className="w-96"
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0, rotateY: 360 }}
           animate={{
             opacity: 1,
-            scale: 1,
+            rotateY: 0,
           }}
           transition={{
             ease: [0, 0.71, 0.2, 1.01],
-            duration: 0.8,
+            duration: 1.5,
             delay: 1.5,
           }}
         />
@@ -65,7 +65,7 @@ function Intro() {
           }}
           transition={{
             ease: [0, 0.71, 0.2, 1.01],
-            duration: 0.8,
+            duration: 1.5,
             delay: 1,
           }}
         />
