@@ -65,15 +65,9 @@ function Header() {
                 scrolled ? "text-white" : ""
               }`}
             >
-              <li className="hover:text-white">
-                <a href="#">Home</a>
-              </li>
               <li className="inline-flex hover:text-white ease-in items-center gap-1">
                 <IoLogoGithub />
                 <a href="https://github.com/Jchael12/Babel-App">Source</a>
-              </li>
-              <li className="hover:text-white">
-                <a href="#">Contact</a>
               </li>
             </ul>
             <div className="md:hidden">
@@ -93,24 +87,9 @@ function Header() {
                 scrolled ? "transition duration-500 text-white" : ""
               }`}
             >
-              <li>
-                <a exact to="/" activeClassName="active-link">
-                  Home
-                </a>
-              </li>
               <li className="inline-flex items-center gap-1 mr-5">
                 <IoLogoGithub />
                 <a href="https://github.com">Source</a>
-              </li>
-              <li>
-                <a to="/contact" activeClassName="active-link">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a to="/download" activeClassName="active-link">
-                  Download
-                </a>
               </li>
             </ul>
           </nav>
